@@ -81,6 +81,7 @@ nav {
   border-radius: 10px;
   position: fixed;
   row-gap: 20px;
+  box-shadow: 5px 5px 10px;
 }
 
 .x-icon {
@@ -128,6 +129,7 @@ nav {
   border-radius: 10px;
   position: fixed;
   row-gap: 20px;
+  box-shadow: 5px 5px 10px;
 }
 
 .x-icon {
