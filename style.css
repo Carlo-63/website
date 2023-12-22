@@ -206,10 +206,72 @@ nav {
   margin: auto;
 }
 
+.lingue-title {
+  font-family: "General Sans", sans-serif;
+  color: var(--clr-accent);
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.lingue-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  row-gap: 20px;
+}
+
+.lingua-card {
+  width: 700px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: var(--clr-last);
+}
+
+.lingua-card > img {
+  width: 700px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+.lingua-card > h1 {
+  font-family: "General Sans", sans-serif;
+  color: var(--clr-accent);
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.lingua-card > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lingua-card > div > p {
+  font-family: "General Sans", sans-serif;
+  color: var(--clr-accent);
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+}
+
 @media (max-width: 1700px) {
   .skills-cards {
     grid-template-columns: repeat(2, 500px);
     gap: 100px;
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .lingue-cards {
+    flex-direction: column;
+    align-items: center;
     row-gap: 50px;
   }
 }
@@ -266,6 +328,19 @@ nav {
   .tech-card {
     width: 700px;
   }
+
+  .lingua-card > div > p {
+    font-size: 23px;
+  }
+
+  .lingua-card > img {
+    width: 700px;
+    height: 450px;
+  }
+
+  .lingua-card {
+    width: 700px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -292,6 +367,15 @@ nav {
   }
 
   .tech-card {
+    width: 500px;
+  }
+
+  .lingua-card > img {
+    width: 500px;
+    height: 300px;
+  }
+
+  .lingua-card {
     width: 500px;
   }
 }
@@ -330,6 +414,19 @@ nav {
   .tech-title {
     font-size: 40px;
   }
+
+  .lingua-card > img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .lingua-card {
+    width: 400px;
+  }
+
+  .lingua-title {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -361,6 +458,20 @@ nav {
   }
 
   .tech-title {
+    font-size: 40px;
+  }
+
+  .lingua-card > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lingua-card {
+    width: 100%;
+    padding: 0;
+  }
+
+  .lingua-title {
     font-size: 40px;
   }
 }
