@@ -1,11 +1,23 @@
-const showModal = () => {
-    const modal = document.querySelector('.social-modal');
+const showContattamiModal = () => {
+    const modal = document.querySelector('.contattami-modal');
 
     modal.style.display = "flex";
 }
 
-const hideModal = () => {
-    const modal = document.querySelector('.social-modal');
+const showCompModal = () => {
+    const modal = document.querySelector('.comp-modal');
+
+    modal.style.display = "flex";
+}
+
+const hideContattamiModal = () => {
+    const modal = document.querySelector('.contattami-modal');
+    
+    modal.style.display = "none";
+}
+
+const hideCompModal = () => {
+    const modal = document.querySelector('.comp-modal');
     
     modal.style.display = "none";
 }

@@ -49,13 +49,26 @@ nav {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-top: 20px;
+  margin-left: 0;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comp-text {
+  font-family: "General Sans", sans-serif;
+  color: var(--clr-accent);
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: 40px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.social-modal {
+.contattami-modal {
   display: none;
   flex-direction: column;
   background-color: var(--clr-accent);
@@ -79,7 +92,7 @@ nav {
   cursor: pointer;
 }
 
-.social-modal-text {
+.contattami-modal-text {
   text-decoration: none;
   font-family: "General Sans", sans-serif;
   color: var(--clr-secondary);
@@ -92,12 +105,62 @@ nav {
   transition: 0.3s;
 }
 
-.social-modal-text:hover {
+.contattami-modal-text:hover {
   background-color: var(--clr-secondary);
   color: var(--clr-accent);
 }
 
 .contattami-text:hover {
+  color: var(--clr-secondary);
+  font-size: 43px;
+}
+
+.comp-modal {
+  display: none;
+  flex-direction: column;
+  background-color: var(--clr-accent);
+  height: auto;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  padding: 20px 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  position: fixed;
+  row-gap: 20px;
+}
+
+.x-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.comp-modal-text {
+  font-family: "General Sans", sans-serif;
+  color: var(--clr-secondary);
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5px 5px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.comp-modal-text:hover {
+  background-color: var(--clr-secondary);
+  color: var(--clr-accent);
+}
+
+.comp-text:hover {
   color: var(--clr-secondary);
   font-size: 43px;
 }
@@ -277,7 +340,11 @@ nav {
 }
 
 @media (max-width: 1300px) {
-  .social-modal {
+  .contattami-modal {
+    width: 50%;
+  }
+
+  .comp-modal {
     width: 50%;
   }
 
@@ -344,7 +411,11 @@ nav {
 }
 
 @media (max-width: 800px) {
-  .social-modal {
+  .contattami-modal {
+    width: 65%;
+  }
+
+  .comp-modal {
     width: 65%;
   }
 
@@ -383,10 +454,20 @@ nav {
 @media (max-width: 600px) {
   .contattami-text {
     margin: auto;
+    font-size: 25px;
   }
 
   .contattami-text:hover {
-    font-size: 32px;
+    font-size: 30px;
+  }
+
+  .comp-text {
+    margin: auto;
+    font-size: 25px;
+  }
+
+  .comp-text:hover {
+    font-size: 30px;
   }
 
   .presentazione-text {
@@ -430,7 +511,17 @@ nav {
 }
 
 @media (max-width: 450px) {
-  .social-modal {
+  nav {
+    flex-direction: column;
+    padding: 20px 0;
+    row-gap: 5px;
+  }
+
+  .contattami-modal {
+    width: 80%;
+  }
+
+  .comp-modal {
     width: 80%;
   }
 
@@ -479,5 +570,29 @@ nav {
 @media (max-width: 350px) {
   .presentazione-p {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 300px) {
+  .presentazione-p {
+    font-size: 10px;
+  }
+}
+
+@media (max-height: 750px) {
+  .comp-modal-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 550px) {
+  .comp-modal-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-height: 450px) {
+  .comp-modal-text {
+    font-size: 10px;
   }
 }
